@@ -4,72 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etapa 0</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Gestion del proyecto.</h1>
-        <nav>
-            <ul>
-                <li><a href="#Etapa0">Etapa 0</a></li>
-                <li><a href="#Etapa1">Etapa 1</a></li>
-                <li><a href="#Etapa2">Etapa 2</a></li>
-                <li><a href="#Etapa3">Etapa 3</a></li>
-                <li><a href="#Etapa4">Etapa 4</a></li>
-            </ul>
-        </nav>
-    </header>
-        <section id="etapa-0">
-            <h2>Etapa 0 - Inicio.</h2>
-            <div class="elementos">
-                <div class="elemento">
-                <p>Propuesta de negocio.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Identificacion de mercado.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Detencion de la demanda.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Benchmarking</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Plan operativo.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Plan comercial.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
-            <div class="elemento">
-                <p>Plan de comercializacion.</p>
-                <button>Formulario</button>
-                <button>Plantilla</button>
-                <button>Minuta</button>
-            </div>
+    <header class="bg-primary text-white p-3 mb-4">
+        <div class="container">
+            <h1 class="text-center">Gestión del Proyecto</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-0">Etapa 0</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-1">Etapa 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-2">Etapa 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-3">Etapa 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-4">Etapa 4</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+    </header>
+
+    <main class="container mb-5">
+        <section id="etapa-0">
+            <h2 class="mb-4">Etapa 0 - Inicio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Propuesta de negocio</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Identificación de mercado</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Detección de la demanda</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Benchmarking</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Plan operativo</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Plan comercial</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">Plan de comercialización</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                            <button class="btn btn-info btn-block">Minuta</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Derechos reservados a consultoria sin nombre XD.</p>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Derechos reservados a consultoría sin nombre XD.</p>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
