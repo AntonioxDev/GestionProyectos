@@ -12,44 +12,58 @@
     });
 });*/
 
-//Propuest
-document.addEventListener('DOMContentLoaded', () => {
-    // Obtener los datos guardados en el localStorage
-    let guardardatos = JSON.parse(localStorage.getItem('fromData')) || []
+//Propuesta
+function guardar_propuesta() {
+    const fecha_inicio = document.getElementById('FechaEtapa0Propuesta').value;
+    const nombre_empresa = document.getElementById('NombreEmpresa').value;
+    const resumen_empresa = document.getElementById('ResumenEmp').value;
+    const objetivo_empresa = document.getElementById('ObjetivoEmp').value;
+    const logo_empresa = document.getElementById('LogoEmp').value;
+    const costo_propuesta = document.getElementById('CostoPropuesta').value;
+    const tiempo_propuesta = document.getElementById('TiempoPropuesta').value;
+    const sector_empresa = document.getElementById('SectorEmp').value;
+    const costo_sector = document.getElementById('CSectorEmp').value;
+    const tiempo_sector = document.getElementById('TSectorEmp').value;
+    const giro_empresa = document.getElementById('GiroEmp').value;
+    const costo_giro = document.getElementById('CGiroEmp').value;
+    const tiempo_giro = document.getElementById('TGiroEmp').value;
+    const pib_empresa = document.getElementById('PIBEmp').value;
+    const costo_pib = document.getElementById('CPIBEmp').value;
+    const tiempo_pib = document.getElementById('TPIBEmp').value;
+    const responsable_op = document.getElementById('ResOp').value;
+    const responsable_co = document.getElementById('ResCo').value;
+    const responsable_rh = document.getElementById('ResRH').value;
+    const responsable_tec = document.getElementById('ResTec').value;
+    const responsable_fi = document.getElementById('ResFi').value;
 
-    // Llenar los campos del formulario con los datos guardados
-    guardardatos.forEach(data => {
-        const input = document.createElement('input');
-        input.type = 'text';
-        input.value = data.value;
-        input.id = data.id;
-        document.getElementById('inputForm').appendChild(input);
-    });
+    let datos = JSON.parse(localStorage.getItem('datos')) || {};
 
-    // Agregar el evento de envío del formulario
-    document.getElementById('inputForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+    datos[fecha_inicio] = value;
+    datos[nombre_empresa] = value;
+    datos[resumen_empresa] = value;
+    datos[objetivo_empresa] = value;
+    datos[logo_empresa] = value;
+    datos[costo_propuesta] = value;
+    datos[tiempo_propuesta] = value;
+    datos[sector_empresa] = value;
+    datos[costo_sector] = value;
+    datos[tiempo_sector] = value;
+    datos[giro_empresa] = value;
+    datos[costo_giro] = value;
+    datos[tiempo_giro] = value;
+    datos[pib_empresa] = value;
+    datos[costo_pib] = value;
+    datos[tiempo_pib] = value;
+    datos[responsable_op] = value;
+    datos[responsable_co] = value;
+    datos[responsable_rh] = value;
+    datos[responsable_tec] = value;
+    datos[responsable_fi] = value;
 
-        // Obtener los datos del formulario
-        const formData = Array.from(document.querySelectorAll('#inputForm input')).map(input => ({
-            id: input.id,
-            value: input.value
-        }));
+    localStorage.setItem('datos', JSON.stringify(datos));
 
-        // Guardar los datos en el localStorage
-        localStorage.setItem('formData', JSON.stringify(formData));
-        alert('¡Información guardada!');
-    });
-
-    // Acceder a los datos guardados
-    const accessData = () => {
-        const savedData = JSON.parse(localStorage.getItem('formData')) || [];
-        console.log(savedData);
-    };
-
-    // Llamar a la función para acceder a los datos
-    accessData();
-});
+    console.log('Dato guardado en la memoria local');
+}
 
 
 //Etapa 1
