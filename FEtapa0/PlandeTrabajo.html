@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan de trabajo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Plan de trabajo</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="PlanTrabajo">
+            <form id="inputForm">
+                <div class="bordered-section">
+                    <h2 class="mb-4">Etapa 0 - Inicio</h2>
+                    <div class="form-group">
+                        <p class="lead">Fecha</p>
+                        <label for="FechaEtapa0PlanTrabajo">Fecha de inicio:</label>
+                        <input type="text" class="form-control" id="FechaEtapa0PlanTrabajo" name="FechaEtapa0PlanTrabajo">
+
+                        <p class="lead">Costo</p>
+                        <label for="CostoPlanTrabajo">$:</label>
+                        <input type="text" class="form-control" id="CostoPlanTrabajo" name="CostoPlanTrabajo">
+                    </div>
+
+                    <form id="inputForm">
+                        <!-- Entregable para Etapa 0 -->
+                    <div class="Entregables"> 
+                        <div>
+                            <label for="entregable0">Entregable - Etapa 0:</label>
+                            <textarea id="entregable0" name="entregable0" required></textarea>
+                        </div>
+                    
+                        <!-- Entregable para Etapa 1 -->
+                        <div>
+                            <label for="entregable1">Entregable - Etapa 1:</label>
+                            <textarea id="entregable1" name="entregable1" required></textarea>
+                        </div>
+                    
+                        <!-- Entregable para Etapa 2 -->
+                        <div>
+                            <label for="entregable2">Entregable - Etapa 2:</label>
+                            <textarea id="entregable2" name="entregable2" required></textarea>
+                        </div>
+                    
+                        <!-- Entregable para Etapa 3 -->
+                        <div>
+                            <label for="entregable3">Entregable - Etapa 3:</label>
+                            <textarea id="entregable3" name="entregable3" required></textarea>
+                        </div>
+                    
+                        <!-- Entregable para Etapa 4 -->
+                        <div>
+                            <label for="entregable4">Entregable - Etapa 4:</label>
+                            <textarea id="entregable4" name="entregable4" required></textarea>
+                        </div>               
+                    </div>
+
+                    <!--Etapa 1-->
+                    <div id="etapa1">
+                        <h2>Etapa 1</h2>                    
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Acta constitutiva del proyecto</strong></p>
+                            <label for="TActaconstitutiva">Tiempo (días):</label>
+                            <input type="number" id="TActaconstitutiva" name="TActaconstitutiva">
+                            <label for="CActaconstitutiva">Costo:</label>
+                            <input type="text" id="CActaconstitutiva" name="CActaconstitutiva">
+                            <label for="RActaconstitutiva">Recursos:</label>
+                            <input type="text" id="RActaconstitutiva" name="RActaconstitutiva">
+                                <label for="ResActaconstitutiva">Responsable:</label>
+                                <select id="ResActaconstitutiva" name="ResActaconstitutiva" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Matriz de interesados</strong></p>
+                            <label for="TMatriz">Tiempo (días):</label>
+                            <input type="number" id="TMatriz" name="TMatriz">
+                            <label for="CMatriz">Costo:</label>
+                            <input type="text" id="CMatriz" name="CMatriz">
+                            <label for="RMatriz">Recursos:</label>
+                            <input type="text" id="RMatriz" name="RMatriz">
+                            <label for="ResMatriz">Responsable:</label>
+                                <select id="ResMatriz" name="ResMatriz" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Plan de dirección del proyecto</strong></p>
+                            <label for="TPlandirec">Tiempo (días):</label>
+                            <input type="number" id="TPlandirec" name="TPlandirec">
+                            <label for="CPlandirec">Costo:</label>
+                            <input type="text" id="CPlandirec" name="CPlandirec">
+                            <label for="RPlandirec">Recursos:</label>
+                            <input type="text" id="RPlandirec" name="RPlandirec">
+                            <label for="ResPlandirec">Responsable:</label>
+                                <select id="ResPlandirec" name="ResPlandirec" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Gestión de alcance</strong></p>
+                            <label for="TGestión">Tiempo (días):</label>
+                            <input type="number" id="TGestión" name="TGestión">
+                            <label for="CGestión">Costo:</label>
+                            <input type="text" id="CGestión" name="CGestión">
+                            <label for="RGestión">Recursos:</label>
+                            <input type="text" id="RGestión" name="RGestión">
+                            <label for="ResGestión">Responsable:</label>
+                                <select id="ResGestión" name="ResGestión" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Plantilla de requisitos</strong></p>
+                            <label for="Trequisitos">Tiempo (días):</label>
+                            <input type="number" id="Trequisitos" name="Trequisitos">
+                            <label for="Crequisitos">Costo:</label>
+                            <input type="text" id="Crequisitos" name="Crequisitos">
+                            <label for="Rrequisitos">Recursos:</label>
+                            <input type="text" id="Rrequisitos" name="Rrequisitos">
+                            <label for="Resrequisitos">Responsable:</label>
+                                <select id="Resrequisitos" name="Resrequisitos" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>EDT</strong></p>
+                            <label for="TEDT">Tiempo (días):</label>
+                            <input type="number" id="TEDT" name="TEDT">
+                            <label for="CEDT">Costo:</label>
+                            <input type="text" id="CEDT" name="CEDT">
+                            <label for="REDT">Recursos:</label>
+                            <input type="text" id="REDT" name="REDT">
+                            <label for="ResEDT">Responsable:</label>
+                                <select id="ResEDT" name="ResEDT" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad -->
+                        <div>
+                            <p><strong>Cronograma</strong></p>
+                            <label for="TCronograma">Tiempo (días):</label>
+                            <input type="number" id="TCronograma" name="TCronograma">
+                            <label for="CCronograma">Costo:</label>
+                            <input type="text" id="CCronograma" name="CCronograma">
+                            <label for="RCronograma">Recursos:</label>
+                            <input type="text" id="RCronograma" name="RCronograma">
+                            <label for="ResCronograma">Responsable:</label>
+                                <select id="ResCronograma" name="ResCronograma" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    </div>
+                    
+                    <div id="etapa2">
+                        <h2>Etapa 2</h2>
+                        <!-- Actividad 1 -->
+                        <div>
+                            <p><strong>Programas de Trabajo</strong></p>
+                            <label for="TProgramasTrabajo">Tiempo (días):</label>
+                            <input type="number" id="TProgramasTrabajo" name="TProgramasTrabajo">
+                            <label for="CProgramasTrabajo">Costo:</label>
+                            <input type="text" id="CProgramasTrabajo" name="CProgramasTrabajo">
+                            <label for="RProgramasTrabajo">Recursos:</label>
+                            <input type="text" id="RProgramasTrabajo" name="RProgramasTrabajo">
+                            <label for="ResProgramasTrabajo">Responsable:</label>
+                                <select id="ResProgramasTrabajo" name="ResProgramasTrabajo" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                        <!-- Actividad 2 -->
+                        <div>
+                            <p><strong>Actividades de ejecución del plan operativo del negocio</strong></p>
+                            <label for="TejecuciónPO">Tiempo (días):</label>
+                            <input type="number" id="TejecuciónPO" name="TejecuciónPO">
+                            <label for="CejecuciónPO">Costo:</label>
+                            <input type="text" id="CejecuciónPO" name="CejecuciónPO">
+                            <label for="RejecuciónPO">Recursos:</label>
+                            <input type="text" id="RejecuciónPO" name="RejecuciónPO">
+                            <label for="ResejecuciónPO">Responsable:</label>
+                                <select id="ResejecuciónPO" name="ResejecuciónPO" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    </div>
+
+                    <div id="etapa3">
+                        <h2>Etapa 3</h2>
+                    
+                        <!-- Actividad 1 -->
+                        <div>
+                            <p><strong>Check list de verificación</strong></p>
+                            <label for="TChecklistV">Tiempo (días):</label>
+                            <input type="number" id="TChecklistV" name="TChecklistV">
+                            <label for="CChecklistV">Costo:</label>
+                            <input type="text" id="CChecklistV" name="CChecklistV">
+                            <label for="RChecklistV">Recursos:</label>
+                            <input type="text" id="RChecklistV" name="RChecklistV">
+                            <label for="ResChecklistV">Responsable:</label>
+                                <select id="ResChecklistV" name="ResChecklistV" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 2 -->
+                        <div>
+                            <p><strong>Plantilla de control de cambios</strong></p>
+                            <label for="Tcontrolcambios">Tiempo (días):</label>
+                            <input type="number" id="Tcontrolcambios" name="Tcontrolcambios">
+                            <label for="Ccontrolcambios">Costo:</label>
+                            <input type="text" id="Ccontrolcambios" name="Ccontrolcambios">
+                            <label for="RTcontrolcambios">Recursos:</label>
+                            <input type="text" id="Rcontrolcambios" name="Rcontrolcambios">
+                            <label for="Rescontrolcambios">Responsable:</label>
+                                <select id="Responsable" name="Responsable" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 3 -->
+                        <div>
+                            <p><strong>Plantilla de control de seguimiento</strong></p>
+                            <label for="Tcontrolseguimiento">Tiempo (días):</label>
+                            <input type="number" id="Tcontrolseguimiento" name="Tcontrolseguimiento">
+                            <label for="Ccontrolseguimiento">Costo:</label>
+                            <input type="text" id="Ccontrolseguimiento" name="Ccontrolseguimiento">
+                            <label for="Rcontrolseguimiento">Recursos:</label>
+                            <input type="text" id="Rcontrolseguimiento" name="Rcontrolseguimiento">
+                            <label for="Rescontrolseguimiento">Responsable:</label>
+                                <select id="Rescontrolseguimiento" name="Rescontrolseguimiento" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                    </div>
+                
+                    <div id="etapa4">
+                        <h2>Etapa 4</h2>
+                    
+                        <!-- Actividad 1 -->
+                        <div>
+                            <p><strong>Plantilla de resultados</strong></p>
+                            <label for="Tresultados">Tiempo (días):</label>
+                            <input type="number" id="Tresultados" name="Tresultados">
+                            <label for="Cresultados">Costo:</label>
+                            <input type="text" id="Cresultados" name="Cresultados">
+                            <label for="Rresultados">Recursos:</label>
+                            <input type="text" id="Rresultados" name="Rresultados">
+                            <label for="Resresultados">Responsable:</label>
+                                <select id="Resresultados" name="Resresultados" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 2 -->
+                        <div>
+                            <p><strong>Plantilla de control de costos</strong></p>
+                            <label for="Tcontrolcostos">Tiempo (días):</label>
+                            <input type="number" id="Tcontrolcostos" name="Tcontrolcostos">
+                            <label for="Ccontrolcostos">Costo:</label>
+                            <input type="text" id="Ccontrolcostos" name="Ccontrolcostos">
+                            <label for="Rcontrolcostos">Recursos:</label>
+                            <input type="text" id="Rcontrolcostos" name="Rcontrolcostos">
+                            <label for="Rescontrolcostos">Responsable:</label>
+                                <select id="Rescontrolcostos" name="Rescontrolcostos" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 3 -->
+                        <div>
+                            <p><strong>Plantilla de evaluación económica</strong></p>
+                            <label for="Tevaluacioneconomica">Tiempo (días):</label>
+                            <input type="number" id="Tevaluacioneconomica" name="Tevaluacioneconomica">
+                            <label for="Cevaluacioneconomica">Costo:</label>
+                            <input type="text" id="Cevaluacioneconomica" name="Cevaluacioneconomica">
+                            <label for="Revaluacioneconomica">Recursos:</label>
+                            <input type="text" id="Revaluacioneconomica" name="Revaluacioneconomica">
+                            <label for="Resevaluacioneconomica">Responsable:</label>
+                                <select id="Resevaluacioneconomica" name="Resevaluacioneconomica" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 4 -->
+                        <div>
+                            <p><strong>Plantilla de riesgo</strong></p>
+                            <label for="Triesgo">Tiempo (días):</label>
+                            <input type="number" id="Triesgo" name="Triesgo">
+                            <label for="Criesgo">Costo:</label>
+                            <input type="text" id="Criesgo" name="Criesgo">
+                            <label for="Rriesgo">Recursos:</label>
+                            <input type="text" id="Rriesgo" name="Rriesgo">
+                            <label for="Resriesgo">Responsable:</label>
+                                <select id="Resriesgo" name="Resriesgo" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>
+                    
+                        <!-- Actividad 5 -->
+                        <div>
+                            <p><strong>Plantilla de acta de cierre del proyecto</strong></p>
+                            <label for="Tactacierre">Tiempo (días):</label>
+                            <input type="number" id="Tactacierre" name="Tactacierre">
+                            <label for="Cactacierre">Costo:</label>
+                            <input type="text" id="Cactacierre" name="Cactacierre">
+                            <label for="Ractacierre">Recursos:</label>
+                            <input type="text" id="Ractacierre" name="Ractacierre">
+                            <label for="Resactacierre">Responsable:</label>
+                                <select id="Resactacierre" name="Resactacierre" required>
+                                    <option value="Tecnologia">Tecnologia</option>
+                                    <option value="Operativa">Operativa</option>
+                                    <option value="R.H">R.H</option>
+                                    <option value="Finanzas">Finanzas</option>
+                                    <option value="Comercial">Comercial</option>
+                                </select>
+                        </div>                  
+                    </div>
+                    <div>
+                        <button type="submit">Guardar</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
