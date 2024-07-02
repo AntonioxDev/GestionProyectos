@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Comercial</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Plan Comercial.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="PlanComercial">
+            <form id="inputForm">
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa0PlanComercial">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa0Comercial" name="FechaEtapa0Comercial">
+                </div>
+                <div class="form-group">
+                    <p class="lead">Costo.</p>
+                    <label for="CPlanComercial">$:</label>
+                    <input type="text" class="form-control" id="CPlanComercial" name="CComercial">
+                </div>
+                
+                <div>
+                    <label for="ActividadPC">Actividad:</label>
+                    <input type="text" id="ActividadPC" name="ActividadPC" required>
+                </div>
+
+                <div>
+                    <label for="TiempoPC">Tiempo:</label>
+                    <input type="text" id="TiempoPC" name="TiempoPC" required>
+                </div>
+
+                <div>
+                    <label for="CantidadPC">Cantidades:</label>
+                    <input type="number" id="CantidadesPC" name="CantidadesPC" required>
+                </div>
+
+                <div>
+                    <label for="PrecioPC">Precio:</label>
+                    <input type="number" id="PrecioPC" name="PrecioPC" required>
+                </div>
+
+                <div>
+                    <button type="submit">Guardar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

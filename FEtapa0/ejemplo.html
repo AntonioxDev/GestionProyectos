@@ -83,3 +83,66 @@
         <button type="submit">Guardar</button>
     </div>
 </form>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Actividades</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace a hoja de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Formulario de Actividades</h1>
+    </header>
+
+    <main>
+        <section id="actividad-formulario">
+            <h2>Registro de Actividad</h2>
+            <form id="inputForm">
+                <div>
+                    <label for="actividad">Actividad:</label>
+                    <input type="text" id="actividad" name="actividad" required>
+                </div>
+
+                <div>
+                    <label for="resumen">Resumen:</label>
+                    <input type="text" id="resumen" name="resumen" required>
+                </div>
+
+                <div>
+                    <label for="numeroPersonas">Número de Personas:</label>
+                    <input type="number" id="numeroPersonas" name="numeroPersonas" required>
+                </div>
+
+                <div>
+                    <label for="tiempo">Tiempo (horas):</label>
+                    <input type="number" id="tiempo" name="tiempo" required>
+                </div>
+
+                <div>
+                    <label for="area">Área:</label>
+                    <select id="area" name="area" required>
+                        <option value="area1">Área 1</option>
+                        <option value="area2">Área 2</option>
+                        <option value="area3">Área 3</option>
+                        <option value="area4">Área 4</option>
+                        <option value="area5">Área 5</option>
+                    </select>
+                </div>
+
+                <div>
+                    <button type="submit">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script> <!-- Enlace a archivo de JavaScript -->
+</body>
+</html>

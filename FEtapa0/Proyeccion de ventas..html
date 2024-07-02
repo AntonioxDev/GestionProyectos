@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyeccion de ventas.</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Proyeccion de ventas.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="Proyeccion de ventas.">
+            <form id="inputForm">
+                <h2 class="mb-4">Etapa 0 - Inicio</h2>
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa0Proyeccion">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa0Proyeccion" name="FechaEtapa0Proyeccion">
+                </div>
+
+                <div class="form-group">
+                    <p>Proyeccion de ventas.</p>
+                    <p class="lead">Costo</p>
+                    <label for="CProyeccion ">$:</label>
+                    <input type="text" id="CProyeccion " name="CProyeccion ">
+                    <p class="lead">Tiempo</p>
+                    <label for="TProyeccion ">Días:</label>
+                    <input type="text" id="TProyeccion " name="TProyeccion">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Proyeccion de ventas año 1.</p>
+                    <label for="Demanda1">Demanda:</label>
+                    <input type="text" id="Demanda1" name="Demanda1">
+                    <label for="Precioventa1">Costo (Precio de venta):</label>
+                    <input type="text" id="Precioventa1" name="Precioventa1">
+                    <!--Mercado meta * Satisfacion-->
+                    <label for="Venta1">Venta:</label>
+                    <input type="text" id="Venta1" name="Venta1">
+                    <!--Aquie se saca en porcentaje que hay entre el total de los años.-->
+                    <label for="Incremento1">Incremento:</label>
+                    <input type="text" id="Incremento1" name="Incremento1">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Proyeccion de ventas año 2.</p>
+                    <label for="Demanda2">Demanda:</label>
+                    <input type="text" id="Demanda2" name="Demanda2">
+                    <label for="Precioventa1">Costo (Precio de venta):</label>
+                    <input type="text" id="Precioventa2" name="Precioventa2">
+                    <!--Mercado meta * Satisfacion-->
+                    <label for="Venta2">Venta:</label>
+                    <input type="text" id="Venta2" name="Venta2">
+                    <!--Aquie se saca en porcentaje que hay entre el total de los años.-->
+                    <label for="Incremento2">Incremento:</label>
+                    <input type="text" id="Incremento2" name="Incremento2">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Proyeccion de ventas año 3.</p>
+                    <label for="Demanda3">Demanda:</label>
+                    <input type="text" id="Demanda3" name="Demanda3">
+                    <label for="Precioventa3">Costo (Precio de venta):</label>
+                    <input type="text" id="Precioventa3" name="Precioventa3">
+                    <!--Mercado meta * Satisfacion-->
+                    <label for="Venta3">Venta:</label>
+                    <input type="text" id="Venta3" name="Venta3">
+                    <!--Aquie se saca en porcentaje que hay entre el total de los años.-->
+                    <label for="Incremento3">Incremento:</label>
+                    <input type="text" id="Incremento3" name="Incremento3">
+                </div>
+
+                <div class="Presupuestodelnegocio">
+                    <h1>Mercado Objetivo-Mercado Meta=Presupuesto del Negocio</h1>
+                    <label for="Presupuesto">Presupuesto del Negocio:</label>
+                    <!--Debe mostrar el resultdo del total del año 2 - del año 1-->
+                    <input type="text" id="Presupuesto" name="Presupuesto">
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

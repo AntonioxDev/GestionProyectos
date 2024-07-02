@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinacion de la demanda.</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Determinacion de la demanda.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="Determinacion de la demanda.">
+            <form id="inputForm">
+                <h2 class="mb-4">Etapa 0 - Inicio</h2>
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa0Determinacion">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa0Determinacion" name="FechaEtapa0Determinacion">
+                </div>
+
+                <div class="form-group">
+                    <p>Determinacion de la demanda.</p>
+                    <p class="lead">Costo</p>
+                    <label for="CDeterminacion">$:</label>
+                    <input type="text" id="CDeterminacion" name="CDeterminacion">
+                    <p class="lead">Tiempo</p>
+                    <label for="TDeterminacion">Días:</label>
+                    <input type="text" id="TDeterminacion" name="TDeterminacion">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Deteccion de la demanda en Mercado Meta</p>
+                    <label for="Deteccionmeta">Cantidad estimada:</label>
+                    <input type="text" id="Deteccionmeta" name="Deteccionmeta">
+                    <label for="Satisfacionmeta">Satisfacion de clientes:</label>
+                    <input type="text" id="Satisfacionmeta" name="Satisfacionmeta">
+                    <!--Mercado meta * Satisfacion-->
+                    <label for="Demanmeta">Demanda base:</label>
+                    <input type="text" id="Demanmeta" name="Demanmeta">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Detección de la demanda  en Mercado Objetivo</p>
+                    <label for="Deteccionobj">Cantidad estimada:</label>
+                    <input type="text" id="Deteccionobj" name="Deteccionobj">
+                    <label for="Satisfacionobj">Satisfacion de clientes:</label>
+                    <input type="text" id="Satisfacionobj" name="Satisfacionobj">
+                    <label for="Demanobj">Demanda base:</label>
+                    <input type="text" id="Demanobj" name="Demanobj">
+                </div>
+
+                <div class="form-group">
+                    <p class="lead">Detección de la demanda  en Mercado Potencial</p>
+                    <label for="Deteccionpot">Cantidad estimada:</label>
+                    <input type="text" id="Deteccionpot" name="Deteccionpot">
+                    <label for="Satisfacionpot">Satisfacion de clientes:</label>
+                    <input type="text" id="Satisfacionpot" name="Satisfacionpot">
+                    <label for="Demanpot">Demanda base:</label>
+                    <input type="text" id="Demanpot" name="Demanpot">
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

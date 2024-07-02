@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan Operativo</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Plan Operativo.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="PlanOperativo">
+            <form id="inputForm">
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa0PlanOperativo">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa0PlanOperativo" name="FechaEtapa0PlanOperativo">
+                </div>
+                <div class="form-group">
+                    <p class="lead">Presupuesto.</p>
+                    <label for="PPlanOperativo">$:</label>
+                    <input type="text" class="form-control" id="PPlanOperativo" name="PPlanOperativo">
+                </div>
+                
+                <div class="Plan">
+                <div>
+                    <label for="Actividad">Actividad:</label>
+                    <input type="text" id="Actividad" name="Actividad" required>
+                </div>
+
+                <div>
+                    <label for="ResumenA">Resumen:</label>
+                    <input type="text" id="ResumenA" name="ResumenA" required>
+                </div>
+
+                <div>
+                    <label for="NumeroPersonasA">Número de Personas:</label>
+                    <input type="number" id="NumeroPersonasA" name="NumeroPersonasA" required>
+                </div>
+
+                <div>
+                    <label for="TiempoA">Tiempo (Dias):</label>
+                    <input type="number" id="TiempoA" name="TiempoA" required>
+                </div>
+
+                <div>
+                    <label for="area">Área:</label>
+                    <select id="area" name="area" required>
+                        <option value="Tecnologia">Tecnologia</option>
+                        <option value="Operativa">Operativa</option>
+                        <option value="R.H">R.H</option>
+                        <option value="Finanzas">Finanzas</option>
+                        <option value="Comercial">Comercial</option>
+                    </select>
+                </div>
+                </div>
+
+                <div>
+                    <button type="submit">Guardar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
