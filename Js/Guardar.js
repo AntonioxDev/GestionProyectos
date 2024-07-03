@@ -67,8 +67,8 @@ function guardar_propuesta() {
     console.log("si se guardo la info")
 }
 
-function mostrar(){
+/*function mostrar(){
     const storedUserData = localStorage.getItem('datos');
     const userData = JSON.parse(storedUserData);
     console.log(userData);
-}
+}*/
