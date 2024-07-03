@@ -4,6 +4,12 @@
         document.getElementById('NombreEmp').value = savedNombreEmp;
     }*/
 
+        const actividades = {
+            addActividad: function addElem(elem) {
+                [].push.call(this, elem);
+            }
+        }
+
 document.getElementById('inputForm').addEventListener('submit', function (event) {
     event.preventDefault();
     /*const NombreEmp = document.getElementById('NombreEmp').value;
@@ -177,12 +183,35 @@ function guardar_comercial(){
     localStorage.setItem('datos5', JSON.stringify(datos5))
 }
 
-function guardar_trabajo(){
+function guardar_act_po(){
     
+    const actividad = document.getElementById('Actividad').value;
+    const resumen = document.getElementById('ResumenA').value;
+    const n_personas = document.getElementById('NumeroPersonasA').value;
+    const tiempo = document.getElementById('TiempoA').value;
+    const area = document.getElementById('area').value;
+
+    const datos_act = {
+        actividad: actividad,
+        resumen: resumen,
+        n_personas: n_personas,
+        tiempo: tiempo,
+        area: area,
+    }
+
+    actividades.addActividad(datos_act);
+    
+    console.log(actividades);
+    
+
+    //actividades.push(datos_act);
+    localStorage.setItem('datos_act',JSON.stringify(actividades));
+    alert('Actividad guardada');
+    //console.log(element);
 }
 
-/*function mostrar(){
-    const storedUserData = localStorage.getItem('datos');
+function mostrar(){
+    const storedUserData = localStorage.getItem('datos_act');
     const userData = JSON.parse(storedUserData);
     console.log(userData);
-}*/
+}
