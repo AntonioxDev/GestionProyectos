@@ -4,67 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etapa 1</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace a hoja de estilos CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <h1>Gestion del proyecto.</h1>
-        <nav>
-            <ul>
-                <li><a href="#Etapa0">Etapa 0</a></li>
-                <li><a href="#Etapa1">Etapa 1</a></li>
-                <li><a href="#Etapa2">Etapa 2</a></li>
-                <li><a href="#Etapa3">Etapa 3</a></li>
-                <li><a href="#Etapa4">Etapa 4</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white p-3 mb-4">
+        <div class="container">
+            <h1 class="text-center">Gestión del Proyecto</h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-0">Etapa 0</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-1">Etapa 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-2">Etapa 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-3">Etapa 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#etapa-4">Etapa 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <main class="container mb-5">
         <section id="etapa-1">
-            <h2>Etapa 1 - Planeacion</h2>
-            <div class="elementos">
-                <div class="elemento">
-                    <p>Acta de constituccion del proyecto.</p>
-                    <button>Formulario</button>
-                    <button>Plantilla</button>
+            <h2 class="mb-4">Etapa 1 - Planificación</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Acta de Constitución del Proyecto</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Gestion de interesados.</p>
-                    <button>Formulario</button>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Gestión de Interesados</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Plan de direccion.</p>
-                    <button>Formulario</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Plan de Dirección</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Gestion del alcance.</p>
-                    <button>Formulario</button>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Gestión del Alcance</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Gestion de requesitos.</p>
-                    <button>Formulario</button>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Gestión de Requisitos</p>
+                            <button class="btn btn-primary btn-block">Formulario</button>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Cronograma.</p>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Cronograma</p>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>Grafica de grant.</p>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">Gráfica de Gantt</p>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="elemento">
-                    <p>EDT.</p>
-                    <button>Plantilla</button>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <p class="card-text">EDT</p>
+                            <button class="btn btn-secondary btn-block">Plantilla</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Derechos reservados a consultoria sin nombre XD.</p>
+    <footer class="bg-dark text-white text-center p-3">
+        <p>&copy; 2024 Derechos reservados a consultoría sin nombre XD.</p>
     </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
