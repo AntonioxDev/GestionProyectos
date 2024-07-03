@@ -207,11 +207,230 @@ function guardar_trabajo(){
     const cgestion = document.getElementById('CGestion').value;
     const rgestion = document.getElementById('RGestion').value;
     const resgestion = document.getElementById('ResGestion').value;
-    
+    const trequisitos = document.getElementById('Trequisitos').value;
+    const crequisitos = document.getElementById('Crequisitos').value;
+    const rrequisitos = document.getElementById('Rrequisitos').value;
+    const resrequisitos = document.getElementById('Resrequisitos').value;
+    const tedt = document.getElementById('TEDT').value;
+    const cedt = document.getElementById('CEDT').value;
+    const redt = document.getElementById('REDT').value;
+    const resedt = document.getElementById('ResEDT').value;
+    const tcronograma = document.getElementById('TCronograma').value;
+    const ccronograma = document.getElementById('CCronograma').value;
+    const rcronograma = document.getElementById('RCronograma').value;
+    const rescronograma = document.getElementById('ResCronograma').value;
+    const tprogramastrabajo = document.getElementById('TProgramasTrabajo').value;
+    const cprogramastrabajo = document.getElementById('CProgramasTrabajo').value;
+    const rprogramastrabajo = document.getElementById('RProgramasTrabajo').value;
+    const resprogramastrabajo = document.getElementById('ResProgramasTrabajo').value;
+    const tejecucionpo = document.getElementById('Tejecucionpo').value;
+    const cejecucionpo = document.getElementById('CejecucionPO').value;
+    const rejecucionpo = document.getElementById('RejecucionPO').value;
+    const resejecucionpo = document.getElementById('ResejecucionPO').value;
+    const tchecklistv = document.getElementById('TChecklistV').value;
+    const cchecklistv = document.getElementById('CChecklistV').value;
+    const rchecklistv = document.getElementById('RChecklistV').value;
+    const reschecklistv = document.getElementById('ResChecklistV').value;
+    const tcontrolcambios = document.getElementById('Tcontrolcambios').value;
+    const ccontrolcambios = document.getElementById('Ccontrolcambios').value;
+    const rcontrolcambios = document.getElementById('Rcontrolcambios').value;
+    const responsable = document.getElementById('Responsable').value;
+    const tcontrolseguimiento = document.getElementById('Tcontrolseguimiento').value;
+    const ccontrolseguimiento = document.getElementById('Ccontrolseguimiento').value;
+    const rercontrolseguimientodt = document.getElementById('Rcontrolseguimiento').value;
+    const rescontrolseguimiento = document.getElementById('Rescontrolseguimiento').value;
+    const tresultados = document.getElementById('Tresultados').value;
+    const cresultados = document.getElementById('Cresultados').value;
+    const rresultados = document.getElementById('Rresultados').value;
+    const resresultados = document.getElementById('Resresultados').value;
+    const tcontrolcostos = document.getElementById('Tcontrolcostos').value;
+    const ccontrolcostos = document.getElementById('Ccontrolcostos').value;
+    const rcontrolcostos = document.getElementById('Rcontrolcostos').value;
+    const rescontrolcostos = document.getElementById('Rescontrolcostos').value;
+    const tevaluacioneconomica = document.getElementById('Tevaluacioneconomica').value;
+    const cevaluacioneconomica = document.getElementById('Cevaluacioneconomica').value;
+    const revaluacioneconomica = document.getElementById('Revaluacioneconomica').value;
+    const resevaluacioneconomica = document.getElementById('Resevaluacioneconomica').value;
+    const triesgo = document.getElementById('Triesgo').value;
+    const criesgo = document.getElementById('Criesgo').value;
+    const rriesgo = document.getElementById('Rriesgo').value;
+    const resriesgo = document.getElementById('Resriesgo').value;
+    const tactacierre = document.getElementById('Tactacierre').value;
+    const cactacierre = document.getElementById('Cactacierre').value;
+    const ractacierre = document.getElementById('Ractacierre').value;
+    const resactacierre = document.getElementById('Resactacierre').value;
+
+    const datos6 = {
+        fecha_trabajo: fecha_trabajo,
+        costo_trabajo: costo_trabajo,
+        entregable: entregable,
+        entregable1: entregable1,
+        entregable2: entregable2,
+        entregable3: entregable3,
+        entregable4: entregable4,
+        tactaconstitutiva: tactaconstitutiva,
+        cactaconstitutiva: cactaconstitutiva,
+        ractaconstitutiva: ractaconstitutiva,
+        resactaconstitutiva: resactaconstitutiva,
+        tmatriz: tmatriz,
+        cmatriz: cmatriz,
+        rmatriz: rmatriz,
+        resmatriz: resmatriz,
+        tplandirec: tplandirec,
+        cplandirec: cplandirec,
+        rplandirec: rplandirec,
+        resplandirec: resplandirec,
+        tgestion: tgestion,
+        cgestion: cgestion,
+        rgestion: rgestion,
+        resgestion: resgestion,
+        trequisitos: trequisitos,
+        crequisitos: crequisitos,
+        rrequisitos: rrequisitos,
+        resrequisitos: resrequisitos,
+        tedt: tedt,
+        cedt: cedt,
+        redt: redt,
+        resedt: resedt,
+        tcronograma: tcronograma,
+        ccronograma: ccronograma,
+        rcronograma: rcronograma,
+        rescronograma: rescronograma,
+        tprogramastrabajo: tprogramastrabajo,
+        cprogramastrabajo: cprogramastrabajo,
+        rprogramastrabajo: rprogramastrabajo,
+        resprogramastrabajo: resprogramastrabajo,
+        tejecucionpo: tejecucionpo,
+        cejecucionpo: cejecucionpo,
+        rejecucionpo: rejecucionpo,
+        resejecucionpo: resejecucionpo,
+        tchecklistv: tchecklistv,
+        cchecklistv: cchecklistv,
+        rchecklistv: rchecklistv,
+        reschecklistv: reschecklistv,
+        tcontrolcambios: tcontrolcambios,
+        ccontrolcambios: ccontrolcambios,
+        rcontrolcambios: rcontrolcambios,
+        responsable: responsable,
+        tcontrolcambios: tcontrolcambios,
+        tcontrolseguimiento: tcontrolseguimiento,
+        ccontrolseguimiento: ccontrolseguimiento,
+        rercontrolseguimientodt: rercontrolseguimientodt,
+        rescontrolseguimiento: rescontrolseguimiento,
+        tresultados: tresultados,
+        cresultados: cresultados,
+        rresultados: rresultados,
+        resresultados: resresultados,
+        tcontrolcostos: tcontrolcostos,
+        ccontrolcostos: ccontrolcostos,
+        rcontrolcostos: rcontrolcostos,
+        rescontrolcostos: rescontrolcostos,
+        tevaluacioneconomica: tevaluacioneconomica,
+        cevaluacioneconomica: cevaluacioneconomica,
+        revaluacioneconomica: revaluacioneconomica,
+        resevaluacioneconomica: resevaluacioneconomica,
+        triesgo: triesgo,
+        criesgo: criesgo,
+        rriesgo: rriesgo,
+        resriesgo: resriesgo,
+        tactacierre: tactacierre,
+        cactacierre: cactacierre,
+        ractacierre: ractacierre,
+        resactacierre: resactacierre
+    };
+    alert('Información guardada')
+
+    localStorage.setItem('datos6', JSON.stringify(datos6))
+}
+
+function guardar_estudios(){
+    const fecha_estudios = document.getElementById('FechaEtapa0Estudios').value;
+    const estudiom = document.getElementById('EstudioM').value;
+    const testudiom = document.getElementById('TEstudioM').value;
+    const ctecnico = document.getElementById('Ctecnico').value;
+    const ttecnico = document.getElementById('Ttecnico').value;
+    const ceconomico = document.getElementById('Ceconomico').value;
+    const teconomico = document.getElementById('Teconomico').value;
+    const cfinanciero = document.getElementById('CFinanciero').value;
+    const tfinanciero = document.getElementById('TFinanciero').value;
+
+    const datos7 = {
+        fecha_estudios: fecha_estudios,
+        estudiom: estudiom,
+        testudiom: testudiom,
+        ctecnico: ctecnico,
+        ttecnico: ttecnico,
+        ceconomico: ceconomico,
+        teconomico: teconomico,
+        cfinanciero: cfinanciero,
+        tfinanciero: tfinanciero
+    };
+    alert('Información guardada')
+
+    localStorage.setItem('datos7', JSON.stringify(datos7))
+}
+
+function guardar_operativo(){
+    const fecha_operativa = document.getElementById('FechaEtapa0PlanOperativo').value;
+    const pplanoperativo = document.getElementById('PPlanOperativo').value;
+    const actividad = document.getElementById('Actividad').value;
+    const resumena = document.getElementById('ResumenA').value;
+    const numeropersonasa = document.getElementById('NumeroPersonasA').value;
+    const tiempoa = document.getElementById('TiempoA').value;
+
+    const datos8 = {
+        fecha_operativa: fecha_operativa,
+        pplanoperativo: pplanoperativo,
+        actividad: actividad,
+        resumena: resumena,
+        numeropersonasa: numeropersonasa,
+        tiempoa: tiempoa
+    };
+    alert('Información guardada')
+
+    localStorage.setItem('datos8', JSON.stringify(datos8))
+}
+
+function guardar_proyeccion(){
+    const fecha_proyeccion = document.getElementById('FechaEtapa0Proyeccion').value;
+    const cproyeccion = document.getElementById('CProyeccion').value;
+    const tproyeccion = document.getElementById('TProyeccion').value;
+    const demanda1 = document.getElementById('Demanda1').value;
+    const precioventa1 = document.getElementById('Precioventa1').value;
+    const venta1 = document.getElementById('Venta1').value;
+    const incremento1 = document.getElementById('Incremento1').value;
+    const demanda2 = document.getElementById('Demanda2').value;
+    const precioventa2 = document.getElementById('Precioventa2').value;
+    const venta2 = document.getElementById('Venta2').value;
+    const demanda3 = document.getElementById('Demanda3').value;
+    const precioventa3 = document.getElementById('Precioventa3').value;
+    const venta3 = document.getElementById('Venta3').value;
+    const incremento3 = document.getElementById('Incremento3').value;
+    const presupuesto = document.getElementById('Presupuesto').value;
+
+    const datos9 = {
+        fecha_proyeccion: fecha_proyeccion,
+        cproyeccion: cproyeccion,
+        tproyeccion: tproyeccion,
+        demanda1: demanda1,
+        precioventa1: precioventa1,
+        venta1: venta1,
+        incremento1: incremento1,
+        demanda2: demanda2,
+        precioventa2: precioventa2,
+        venta2: venta2,
+        demanda3: demanda3,
+        precioventa3: precioventa3,
+        venta3: venta3,
+        incremento3: incremento3,
+        presupuesto: presupuesto
+    };
+    alert('Información guardada')
+
+    localStorage.setItem('datos9', JSON.stringify(datos9))
 }
 
 function guardar_act_po(){
-    
     const actividad = document.getElementById('Actividad').value;
     const resumen = document.getElementById('ResumenA').value;
     const n_personas = document.getElementById('NumeroPersonasA').value;
@@ -223,7 +442,7 @@ function guardar_act_po(){
         resumen: resumen,
         n_personas: n_personas,
         tiempo: tiempo,
-        area: area,
+        area: area
     }
 
     actividades.addActividad(datos_act);
