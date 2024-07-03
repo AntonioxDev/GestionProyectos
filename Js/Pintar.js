@@ -1,5 +1,5 @@
 function llamar_datos(){
     const llamar_dato = JSON.parse(localStorage.getItem('datos'));
 
-    document.getElementById('ejemplo').textContent = llamar_dato.fecha_inicio;
+    document.getElementById('NombreEmpresa').textContent = llamar_dato.nombre_empresa;
 }
