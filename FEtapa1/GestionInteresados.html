@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz de interesados.</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Matriz de interesados.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="Matriz de interesados.">
+            <form id="inputForm">
+                <h2 class="mb-4">Etapa 1 - Planeacion</h2>
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa0Matriz">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa0Matriz" name="FechaEtapa0Matriz">
+                </div>
+
+                <div class="form-group">
+        <table>
+            <h1>Formulario de Interesados</h1>
+            <thead>
+                <tr>
+                    <th>Interesado</th>
+                    <th>Poder / Influencia</th>
+                    <th>Interés</th>
+                    <th>Desconoce</th>
+                    <th>Se resiste</th>
+                    <th>Neutral</th>
+                    <th>Apoya</th>
+                    <th>Líder</th>
+                    <th>Estrategia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gerencia y Directivos</td>
+                    <td><input type="text" name="poderGerencia" /></td>
+                    <td><input type="text" name="interesGerencia" /></td>
+                    <td><input type="checkbox" name="desconoceGerencia" /></td>
+                    <td><input type="checkbox" name="resisteGerencia" /></td>
+                    <td><input type="checkbox" name="neutralGerencia" /></td>
+                    <td><input type="checkbox" name="apoyaGerencia" /></td>
+                    <td><input type="checkbox" name="liderGerencia" /></td>
+                    <td><input type="text" name="estrategiaGerencia"/></td>
+                </tr>
+                <tr>
+                    <td>Proveedores de Software y Hardware</td>
+                    <td><input type="text" name="poderProveedores" /></td>
+                    <td><input type="text" name="interesProveedores" /></td>
+                    <td><input type="checkbox" name="desconoceProveedores" /></td>
+                    <td><input type="checkbox" name="resisteProveedores" /></td>
+                    <td><input type="checkbox" name="neutralProveedores" /></td>
+                    <td><input type="checkbox" name="apoyaProveedores" /></td>
+                    <td><input type="checkbox" name="liderProveedores" /></td>
+                    <td><input type="text" name="estrategiaProveedores"/></td>
+                </tr>
+                <tr>
+                    <td>Equipo de Desarrollo</td>
+                    <td><input type="text" name="poderEquipo" /></td>
+                    <td><input type="text" name="interesEquipo" /></td>
+                    <td><input type="checkbox" name="desconoceEquipo" /></td>
+                    <td><input type="checkbox" name="resisteEquipo" /></td>
+                    <td><input type="checkbox" name="neutralEquipo" /></td>
+                    <td><input type="checkbox" name="apoyaEquipo" /></td>
+                    <td><input type="checkbox" name="liderEquipo" /></td>
+                    <td><input type="text" name="estrategiaEquipo"/></td>
+                </tr>
+                <tr>
+                    <td>Clientes</td>
+                    <td><input type="text" name="poderClientes" /></td>
+                    <td><input type="text" name="interesClientes" /></td>
+                    <td><input type="checkbox" name="desconoceClientes" /></td>
+                    <td><input type="checkbox" name="resisteClientes" /></td>
+                    <td><input type="checkbox" name="neutralClientes" /></td>
+                    <td><input type="checkbox" name="apoyaClientes" /></td>
+                    <td><input type="checkbox" name="liderClientes" /></td>
+                    <td><input type="text" name="estrategiaClientes"/></td>
+                </tr>
+                <tr>
+                    <td>Competencia</td>
+                    <td><input type="text" name="poderCompetencia" /></td>
+                    <td><input type="text" name="interesCompetencia" /></td>
+                    <td><input type="checkbox" name="desconoceCompetencia" /></td>
+                    <td><input type="checkbox" name="resisteCompetencia" /></td>
+                    <td><input type="checkbox" name="neutralCompetencia" /></td>
+                    <td><input type="checkbox" name="apoyaCompetencia" /></td>
+                    <td><input type="checkbox" name="liderCompetencia" /></td>
+                    <td><input type="text" name="estrategiaCompetencia"/></td>
+                </tr>
+                <tr>
+                    <td>Usuarios Finales</td>
+                    <td><input type="text" name="poderUsuarios" /></td>
+                    <td><input type="text" name="interesUsuarios" /></td>
+                    <td><input type="checkbox" name="desconoceUsuarios" /></td>
+                    <td><input type="checkbox" name="resisteUsuarios" /></td>
+                    <td><input type="checkbox" name="neutralUsuarios" /></td>
+                    <td><input type="checkbox" name="apoyaUsuarios" /></td>
+                    <td><input type="checkbox" name="liderUsuarios" /></td>
+                    <td><input type="text" name="estrategiaUsuarios"/></td>
+                </tr>
+                <tr>
+                    <td>Departamento de TI</td>
+                    <td><input type="text" name="poderDepartamentoTI" /></td>
+                    <td><input type="text" name="interesDepartamentoTI" /></td>
+                    <td><input type="checkbox" name="desconoceDepartamentoTI" /></td>
+                    <td><input type="checkbox" name="resisteDepartamentoTI" /></td>
+                    <td><input type="checkbox" name="neutralDepartamentoTI" /></td>
+                    <td><input type="checkbox" name="apoyaDepartamentoTI" /></td>
+                    <td><input type="checkbox" name="liderDepartamentoTI" /></td>
+                    <td><input type="text" name="estrategiaDepartamentoTI"/></td>
+                </tr>
+                <tr>
+                    <td>Reguladores y Autoridades</td>
+                    <td><input type="text" name="poderReguladores" /></td>
+                    <td><input type="text" name="interesReguladores" /></td>
+                    <td><input type="checkbox" name="desconoceReguladores" /></td>
+                    <td><input type="checkbox" name="resisteReguladores" /></td>
+                    <td><input type="checkbox" name="neutralReguladores" /></td>
+                    <td><input type="checkbox" name="apoyaReguladores" /></td>
+                    <td><input type="checkbox" name="liderReguladores" /></td>
+                    <td><input type="text" name="estrategiaReguladores"/></td>
+                </tr>
+                <tr>
+                    <td>Inversores o Accionistas</td>
+                    <td><input type="text" name="poderInversores" /></td>
+                    <td><input type="text" name="interesInversores" /></td>
+                    <td><input type="checkbox" name="desconoceInversores" /></td>
+                    <td><input type="checkbox" name="resisteInversores" /></td>
+                    <td><input type="checkbox" name="neutralInversores" /></td>
+                    <td><input type="checkbox" name="apoyaInversores" /></td>
+                    <td><input type="checkbox" name="liderInversores" /></td>
+                    <td><input type="text" name="estrategiaInversores"/></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
