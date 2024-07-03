@@ -183,6 +183,33 @@ function guardar_comercial(){
     localStorage.setItem('datos5', JSON.stringify(datos5))
 }
 
+function guardar_trabajo(){
+    const fecha_trabajo = document.getElementById('FechaEtapa0PlanTrabajo').value;
+    const costo_trabajo = document.getElementById('CostoPlanTrabajo').value;
+    const entregable = document.getElementById('entregable0').value;
+    const entregable1 = document.getElementById('entregable1').value;
+    const entregable2 = document.getElementById('entregable2').value;
+    const entregable3 = document.getElementById('entregable3').value;
+    const entregable4 = document.getElementById('entregable4').value;
+    const tactaconstitutiva = document.getElementById('TActaconstitutiva').value;
+    const cactaconstitutiva = document.getElementById('CActaconstitutiva').value;
+    const ractaconstitutiva = document.getElementById('RActaconstitutiva').value;
+    const resactaconstitutiva = document.getElementById('ResActaconstitutiva').value;
+    const tmatriz = document.getElementById('TMatriz').value;
+    const cmatriz = document.getElementById('CMatriz').value;
+    const rmatriz = document.getElementById('RMatriz').value;
+    const resmatriz = document.getElementById('ResMatriz').value;
+    const tplandirec = document.getElementById('TPlandirec').value;
+    const cplandirec = document.getElementById('CPlandirec').value;
+    const rplandirec = document.getElementById('RPlandirec').value;
+    const resplandirec = document.getElementById('ResPlandirec').value;
+    const tgestion = document.getElementById('TGestion').value;
+    const cgestion = document.getElementById('CGestion').value;
+    const rgestion = document.getElementById('RGestion').value;
+    const resgestion = document.getElementById('ResGestion').value;
+    
+}
+
 function guardar_act_po(){
     
     const actividad = document.getElementById('Actividad').value;
