@@ -2,15 +2,16 @@
     const savedNombreEmp = localStorage.getItem('NombreEmp');
     if (savedNombreEmp) {
         document.getElementById('NombreEmp').value = savedNombreEmp;
-    }
+    }*/
 
-    document.getElementById('inputForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const NombreEmp = document.getElementById('NombreEmp').value;
-        localStorage.setItem('NombreEmp', NombreEmp);
-        alert('Información guardada!');
-    });
-});*/
+document.getElementById('inputForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    /*const NombreEmp = document.getElementById('NombreEmp').value;
+    localStorage.setItem('NombreEmp', NombreEmp);*/
+    guardar_propuesta();
+    //alert('Información guardada!');
+});
+/*});*/
 
 //Propuesta
 function guardar_propuesta() {
@@ -60,6 +61,14 @@ function guardar_propuesta() {
         responsable_fi: responsable_fi
     };
     alert('Información guardada!');
+    console.log(datos);
 
-    localStorage.setItem('datos', JSON.stringify(datos));
+    localStorage.setItem('datos', JSON.stringify(datos))
+    console.log("si se guardo la info")
+}
+
+function mostrar(){
+    const storedUserData = localStorage.getItem('datos');
+    const userData = JSON.parse(storedUserData);
+    console.log(userData);
 }
