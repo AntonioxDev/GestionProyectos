@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión del Alcance..</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Gestión del Alcance.</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="Gestión del Alcance.">
+            <form id="inputForm">
+                <h2 class="mb-4">Etapa 1 - Planeacion</h2>
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa1Gestion">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa1Gestion" name="FechaEtapa1Gestion">
+                </div>
+                <div>
+                <!-- Paso 1. Entregable del Proyecto -->
+                <div class="form-group">
+                    <p class="lead">Paso 1. Entregable del Proyecto</p>
+                    <label for="entregableNo1">ENTREGABLE NO.:</label>
+                    <input type="text" class="form-control" id="entregableNo1" name="entregableNo1">
+                    <label for="descripcionEntregable1">DESCRIPCIÓN:</label>
+                    <input type="text" class="form-control" id="descripcionEntregable1" name="descripcionEntregable1">
+                </div>
+
+                <!-- Paso 2. Lista de tareas del proyecto -->
+                <div class="form-group">
+                    <p class="lead">Paso 2. Lista de tareas del proyecto</p>
+                    <label>Proporcione el enlace, si corresponde:</label>
+                    <label for="tareaNo1">TAREA NO.:</label>
+                    <input type="text" class="form-control" id="tareaNo1" name="tareaNo1">
+                    <label for="descripcionTarea1">DESCRIPCIÓN:</label>
+                    <input type="text" class="form-control" id="descripcionTarea1" name="descripcionTarea1">
+                    <label for="paraEntregableNo1">PARA ENTREGABLE NO.:</label>
+                    <input type="text" class="form-control" id="paraEntregableNo1" name="paraEntregableNo1">
+                </div>
+
+                <!-- Paso 3. Fuera del alcance -->
+                <div class="form-group">
+                    <p class="lead">Paso 3. Fuera del alcance</p>
+                    <label for="fueraAlcance">Este proyecto NO logrará o incluirá lo siguiente:</label>
+                    <textarea class="form-control" id="fueraAlcance" name="fueraAlcance" rows="4"></textarea>
+                </div>
+
+                <!-- Paso 4. Supuestos del proyecto -->
+                <div class="form-group">
+                    <p class="lead">Paso 4. Supuestos del proyecto</p>
+                    <label for="supuestoNo1">NO.:</label>
+                    <input type="text" class="form-control" id="supuestoNo1" name="supuestoNo1">
+                    <label for="presuncion1">PRESUNCIÓN:</label>
+                    <textarea class="form-control" id="presuncion1" name="presuncion1" rows="4"></textarea>
+                </div>
+
+                <!-- Paso 5. Restricciones del proyecto -->
+                <div class="form-group">
+                    <p class="lead">Paso 5. Restricciones del proyecto</p>
+                    <label for="fechaLanzamiento">FECHA DE LANZAMIENTO / PUESTA EN MARCHA:</label>
+                    <input type="date" class="form-control" id="fechaLanzamiento" name="fechaLanzamiento" value="2024-05-26">
+                    <label for="fechaFinalizacion">FECHA DE FINALIZACIÓN DEL PROYECTO:</label>
+                    <input type="date" class="form-control" id="fechaFinalizacion" name="fechaFinalizacion" value="2024-07-03">
+                    <label for="fechasLimite">ENUMERE CUALQUIER FECHA LÍMITE ESTRICTA:</label>
+                    <textarea class="form-control" id="fechasLimite" name="fechasLimite" rows="4"></textarea>
+                    <label for="hitosClave">ENUMERE OTRAS FECHAS / DESCRIPCIONES DE HITOS CLAVE:</label>
+                    <textarea class="form-control" id="hitosClave" name="hitosClave" rows="4"></textarea>
+                    <label for="limitacionesPresupuesto">LIMITACIONES PRESUPUESTARIAS:</label>
+                    <textarea class="form-control" id="limitacionesPresupuesto" name="limitacionesPresupuesto" rows="4"></textarea>
+                    <label for="restriccionesCalidad">RESTRICCIONES DE CALIDAD O RENDIMIENTO:</label>
+                    <textarea class="form-control" id="restriccionesCalidad" name="restriccionesCalidad" rows="4"></textarea>
+                </div>
+
+                <!-- Paso 6. Estimaciones actualizadas -->
+                <div class="form-group">
+                    <p class="lead">Paso 6. Estimaciones actualizadas</p>
+                    <label for="estimacionHoras">Estimar las horas requeridas para completar el proyecto:</label>
+                    <input type="number" class="form-control" id="estimacionHoras" name="estimacionHoras" min="0">
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success">Guardar</button>
+                </div>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

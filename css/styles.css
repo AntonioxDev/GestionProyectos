@@ -71,7 +71,7 @@ main {
 /* Botones */
 button {
     display: inline-block;
-    background-color: #007bff; 
+    background-color: #007bff;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -140,4 +140,37 @@ input[type="text"].important {
     padding: 1rem;
     border-radius: 8px;
     background-color: #e9f7ff3d;
+}
+
+/* Estilos para la tabla de control de costos */
+.control-costos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background-color: #f8f9fa; /* Gris claro para toda la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.control-costos-table th,
+.control-costos-table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    background-color: #e9ecef; /* Fondo gris claro */
+}
+
+.control-costos-table th {
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+/* Título de la tabla */
+.control-costos-titulo {
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: #495057; /* Color más sutil */
+    text-align: left;
+    margin-bottom: 1rem;
 }
