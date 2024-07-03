@@ -6,8 +6,6 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
 }
 
@@ -20,6 +18,12 @@ header {
     width: 100%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 1rem;
+}
+
+header .nav-link:hover {
+    text-decoration: underline;
+    background-color: #0056b3;
+    border-radius: 4px;
 }
 
 /* Sección principal */
@@ -173,4 +177,80 @@ input[type="text"].important {
     color: #495057; /* Color más sutil */
     text-align: left;
     margin-bottom: 1rem;
+}
+
+/* Estilos básicos adicionales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .nav-link:hover {
+    text-decoration: underline;
+    background-color: #0056b3;
+    border-radius: 4px;
+}
+
+/* Sección principal */
+main {
+    flex-grow: 1;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card .btn {
+    margin-top: 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.card .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    margin-top: auto;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .card .btn {
+        width: 100%;
+    }
 }
