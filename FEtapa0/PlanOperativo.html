@@ -11,13 +11,31 @@
 
 <body>
     <header class="bg-primary text-white text-center py-3">
-        <h1>Plan Operativo.</h1>
+        <h1>Plan Operativo</h1>
     </header>
 
     <main class="container my-4">
-        <section id="PlanOperativo">
-            <form id="inputForm">
+        <div class="bordered-section">
+            <section id="PlanOperativo">
+                <form id="inputForm">
+                    <div class="form-group">
+                        <p class="lead">Fecha</p>
+                        <label for="FechaEtapa0PlanOperativo">Fecha de inicio:</label>
+                        <input type="date" class="form-control" id="FechaEtapa0PlanOperativo"
+                            name="FechaEtapa0PlanOperativo">
+                    </div>
+                    <div class="form-group">
+                        <p class="lead">Presupuesto</p>
+                        <label for="PPlanOperativo">$:</label>
+                        <input type="number" class="form-control" id="PPlanOperativo" name="PPlanOperativo" min="0"
+                            step="0.01">
+                    </div>
+        </div>
+        <div class="bordered-section">
+            <div class="Plan">
                 <div class="form-group">
+<<<<<<< Updated upstream
+=======
                     <p class="lead">Fecha</p>
                     <label for="FechaEtapa0PlanOperativo">Fecha de inicio:</label>
                     <input type="text" class="form-control" id="FechaEtapa0PlanOperativo" name="FechaEtapa0PlanOperativo">
@@ -26,54 +44,66 @@
                     <p class="lead">Presupuesto.</p>
                     <label for="PPlanOperativo">$:</label>
                     <input type="text" class="form-control" id="PPlanOperativo" name="PPlanOperativo">
+                    <div class="form-group">
+                        <p>Plan Operativo.</p>
+                        <p class="lead">Costo</p>
+                        <label for="CPlanO ">$:</label>
+                        <input type="text" id="CPlanO" name="CPlanO">
+                        <p class="lead">Tiempo</p>
+                        <label for="TPlanO ">Días:</label>
+                        <input type="text" id="TPlanO" name="TPlanO">
+                    </div>
                 </div>
+                <br><br><br>
                 
                 <div class="Plan">
                 <div>
+>>>>>>> Stashed changes
                     <label for="Actividad">Actividad:</label>
-                    <input type="text" id="Actividad" name="Actividad" required>
+                    <input type="text" class="form-control" id="Actividad" name="Actividad" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="ResumenA">Resumen:</label>
-                    <input type="text" id="ResumenA" name="ResumenA" required>
+                    <input type="text" class="form-control" id="ResumenA" name="ResumenA" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="NumeroPersonasA">Número de Personas:</label>
-                    <input type="number" id="NumeroPersonasA" name="NumeroPersonasA" required>
+                    <input type="number" class="form-control" id="NumeroPersonasA" name="NumeroPersonasA" min="1"
+                        required>
                 </div>
 
-                <div>
-                    <label for="TiempoA">Tiempo (Dias):</label>
-                    <input type="number" id="TiempoA" name="TiempoA" required>
+                <div class="form-group">
+                    <label for="TiempoA">Tiempo (Días):</label>
+                    <input type="number" class="form-control" id="TiempoA" name="TiempoA" min="1" required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="area">Área:</label>
-                    <select id="area" name="area" required>
-                        <option value="Tecnologia">Tecnologia</option>
+                    <select class="form-control" id="area" name="area" required>
+                        <option value="Tecnologia">Tecnología</option>
                         <option value="Operativa">Operativa</option>
-                        <option value="R.H">R.H</option>
+                        <option value="RH">R.H</option>
                         <option value="Finanzas">Finanzas</option>
                         <option value="Comercial">Comercial</option>
                     </select>
                 </div>
-                </div>
-
-                <div>
-                    <button type="submit">Guardar</button>
-                </div>
-
-                <div>
-                    <button type="button" onclick="guardar_act_po()">Guardar actividades</button>
-                </div>
-
-            </form>
-
-            <div>
-                <button type="button" onclick="mostrar()">Mostrar</button>
             </div>
+        </div>
+
+        <div class="mt-3">
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+
+        <div class="mt-2">
+            <button type="button" class="btn btn-secondary" onclick="guardar_act_po()">Guardar actividades</button>
+        </div>
+        </form>
+
+        <div class="mt-3">
+            <button type="button" class="btn btn-info" onclick="mostrar()">Mostrar</button>
+        </div>
         </section>
     </main>
 
@@ -82,6 +112,7 @@
     </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
-</body>
     <script src="../js/Guardar.js"></script>
+</body>
+
 </html>

@@ -179,38 +179,23 @@ input[type="text"].important {
     margin-bottom: 1rem;
 }
 
-/* Estilos básicos adicionales */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* Estilos para elementos de la etapa 2 */
+#etapa-2 {
+    padding: 2rem 0;
 }
 
-/* Encabezado */
-header {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.row {
+    gap: 1rem;
 }
 
-header .nav-link:hover {
-    text-decoration: underline;
-    background-color: #0056b3;
-    border-radius: 4px;
+.col-md-4 {
+    flex: 0 0 calc(33.3333% - 1rem);
+    max-width: calc(33.3333% - 1rem);
 }
 
-/* Sección principal */
-main {
-    flex-grow: 1;
-}
-
-/* Tarjetas */
 .card {
-    border: none;
+    background-color: #fff;
     border-radius: 8px;
-    background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -219,38 +204,38 @@ main {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.card-body {
+    padding: 1.5rem;
+}
+
 .card-text {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.card .btn {
+.btn {
     margin-top: 1rem;
-    border-radius: 8px;
-    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
 }
 
-.card .btn:hover {
-    background-color: #0056b3;
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
 }
 
-/* Pie de página */
-footer {
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
+
+.footer {
     margin-top: auto;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-link {
-        margin: 5px 0;
-    }
-
-    .card .btn {
-        width: 100%;
-    }
 }
