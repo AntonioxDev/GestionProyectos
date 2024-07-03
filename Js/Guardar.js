@@ -156,7 +156,7 @@ function guardar_identificacion(){
     localStorage.setItem('datos4', JSON.stringify(datos4))
 }
 
-function guardada_comercial(){
+function guardar_comercial(){
     const fecha_comer = document.getElementById('FechaEtapa0Comercial').value;
     const costo_comer = document.getElementById('CPlanComercial').value;
     const actividad_comer = document.getElementById('ActividadPC').value;
@@ -175,6 +175,10 @@ function guardada_comercial(){
     alert('Información guardada')
 
     localStorage.setItem('datos5', JSON.stringify(datos5))
+}
+
+function guardar_trabajo(){
+    
 }
 
 /*function mostrar(){
