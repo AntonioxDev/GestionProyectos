@@ -59,6 +59,7 @@ function guardar_propuesta() {
         responsable_tec: responsable_tec,
         responsable_fi: responsable_fi
     };
+    alert('Información guardada!');
 
     localStorage.setItem('datos', JSON.stringify(datos));
 }
