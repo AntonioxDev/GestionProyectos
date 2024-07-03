@@ -36,33 +36,31 @@ function guardar_propuesta() {
     const responsable_tec = document.getElementById('ResTec').value;
     const responsable_fi = document.getElementById('ResFi').value;
 
-    let datos = JSON.parse(localStorage.getItem('datos')) || {};
-
-    datos[fecha_inicio] = value;
-    datos[nombre_empresa] = value;
-    datos[resumen_empresa] = value;
-    datos[objetivo_empresa] = value;
-    datos[logo_empresa] = value;
-    datos[costo_propuesta] = value;
-    datos[tiempo_propuesta] = value;
-    datos[sector_empresa] = value;
-    datos[costo_sector] = value;
-    datos[tiempo_sector] = value;
-    datos[giro_empresa] = value;
-    datos[costo_giro] = value;
-    datos[tiempo_giro] = value;
-    datos[pib_empresa] = value;
-    datos[costo_pib] = value;
-    datos[tiempo_pib] = value;
-    datos[responsable_op] = value;
-    datos[responsable_co] = value;
-    datos[responsable_rh] = value;
-    datos[responsable_tec] = value;
-    datos[responsable_fi] = value;
+    const datos = {
+        fecha_inicio: fecha_inicio,
+        nombre_empresa: nombre_empresa,
+        resumen_empresa: resumen_empresa,
+        objetivo_empresa: objetivo_empresa,
+        logo_empresa: logo_empresa,
+        costo_propuesta: costo_propuesta,
+        tiempo_propuesta: tiempo_propuesta,
+        sector_empresa: sector_empresa,
+        costo_sector: costo_sector,
+        tiempo_sector: tiempo_sector,
+        giro_empresa: giro_empresa,
+        costo_giro: costo_giro,
+        tiempo_giro: tiempo_giro,
+        pib_empresa: pib_empresa,
+        costo_pib: costo_pib,
+        tiempo_pib: tiempo_pib,
+        responsable_op: responsable_op,
+        responsable_co: responsable_co,
+        responsable_rh: responsable_rh,
+        responsable_tec: responsable_tec,
+        responsable_fi: responsable_fi
+    };
 
     localStorage.setItem('datos', JSON.stringify(datos));
-
-    console.log('Dato guardado en la memoria local');
 }
 
 
