@@ -62,35 +62,3 @@ function guardar_propuesta() {
 
     localStorage.setItem('datos', JSON.stringify(datos));
 }
-
-
-//Etapa 1
-document.addEventListener('DOMContentLoaded',()=>{
-    const guardarEtapa0 = localStorage.getItem('Etapa0');
-    if (guardarEtapa0) {
-        document.getElementById('Etapa0').value = guardarEtapa0;
-    }
-
-    document.getElementById('inputForm').addEventListener('submit', function(event){
-        event.preventDefault();
-        const Etapa0 = document.getElementById('Etapa0').value;
-        localStorage.setItem('Etapa0', Etapa0);
-        alert('Información guardada');
-    });
-});
-
-
-//Etapa 2
-document.addEventListener('DOMContentLoaded',()=>{
-    const guardarEtapa0 = localStorage.getItem('Etapa0');
-    if (guardarEtapa0) {
-        document.getElementById('Etapa0').value = guardarEtapa0;
-    }
-
-    document.getElementById('inputForm').addEventListener('submit', function(event){
-        event.preventDefault();
-        const Etapa0 = document.getElementById('Etapa0').value;
-        localStorage.setItem('Etapa0', Etapa0);
-        alert('Información guardada');
-    });
-});
