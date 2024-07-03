@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación de Requisitos</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white text-center py-3">
+        <h1>Documentación de Requisitos</h1>
+    </header>
+
+    <main class="container my-4">
+        <section id="documentacionRequisitos">
+            <form id="inputForm">
+                <!-- Propósito de la documentación de requisitos -->
+                <div class="form-group">
+                    <p class="lead">Propósito de la documentación de requisitos</p>
+                    <label for="propositoDocumentacion">Propósito:</label>
+                    <textarea class="form-control" id="propositoDocumentacion" name="propositoDocumentacion" rows="4"></textarea>
+                </div>
+
+                <!-- Recopilación de requisito -->
+                <div class="form-group">
+                    <p class="lead">Recopilación de requisito</p>
+                    <label for="recopilacionRequisito">Recopilación:</label>
+                    <textarea class="form-control" id="recopilacionRequisito" name="recopilacionRequisito" rows="4"></textarea>
+                </div>
+
+                <!-- Documentación de los requisitos -->
+                <div class="form-group">
+                    <p class="lead">Documentación de los requisitos</p>
+                    <label for="documentacionRequisitos">Documentación:</label>
+                    <textarea class="form-control" id="documentacionRequisitos" name="documentacionRequisitos" rows="4"></textarea>
+                </div>
+
+                <!-- Priorización de los requisitos -->
+                <div class="form-group">
+                    <p class="lead">Priorización de los requisitos</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Clasificación</th>
+                                <th>Requisito</th>
+                                <th>Interesado</th>
+                                <th>Nivel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Proyecto</td>
+                                <td>Cumplir con las regulaciones de seguridad</td>
+                                <td>Cliente</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Seguridad</td>
+                                <td>Cumplir con las regulaciones de seguridad</td>
+                                <td>Cliente</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Calidad</td>
+                                <td>Fiabilidad del sistema de alarma</td>
+                                <td>Técnico</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
