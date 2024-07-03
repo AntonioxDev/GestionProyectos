@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentación de Requisitos</title>
+    <title>ACTA CONSTITUCIÓN DEL PROYECTO.</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
     <header class="bg-primary text-white text-center py-3">
         <h1>Documentación de Requisitos</h1>
@@ -17,6 +15,12 @@
     <main class="container my-4">
         <section id="documentacionRequisitos">
             <form id="inputForm">
+                <h2 class="mb-4">Etapa 1 - Planeacion</h2>
+                <div class="form-group">
+                    <p class="lead">Fecha</p>
+                    <label for="FechaEtapa1documentacionRequisitos">Fecha de inicio:</label>
+                    <input type="text" class="form-control" id="FechaEtapa1documentacionRequisitos" name="FechaEtapa1documentacionRequisitos">
+                </div>
                 <!-- Propósito de la documentación de requisitos -->
                 <div class="form-group">
                     <p class="lead">Propósito de la documentación de requisitos</p>
@@ -52,22 +56,40 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Proyecto</td>
-                                <td>Cumplir con las regulaciones de seguridad</td>
-                                <td>Cliente</td>
-                                <td>3</td>
+                                <td>
+                                    <select class="form-control" name="clasificacion1">
+                                        <option value="Proyecto">Proyecto</option>
+                                        <option value="Seguridad">Seguridad</option>
+                                        <option value="Calidad">Calidad</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="requisito1"></td>
+                                <td><input type="text" class="form-control" name="interesado1"></td>
+                                <td><input type="number" class="form-control" name="nivel1"></td>
                             </tr>
                             <tr>
-                                <td>Seguridad</td>
-                                <td>Cumplir con las regulaciones de seguridad</td>
-                                <td>Cliente</td>
-                                <td>1</td>
+                                <td>
+                                    <select class="form-control" name="clasificacion2">
+                                        <option value="Proyecto">Proyecto</option>
+                                        <option value="Seguridad">Seguridad</option>
+                                        <option value="Calidad">Calidad</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="requisito2"></td>
+                                <td><input type="text" class="form-control" name="interesado2"></td>
+                                <td><input type="number" class="form-control" name="nivel2"></td>
                             </tr>
                             <tr>
-                                <td>Calidad</td>
-                                <td>Fiabilidad del sistema de alarma</td>
-                                <td>Técnico</td>
-                                <td>2</td>
+                                <td>
+                                    <select class="form-control" name="clasificacion3">
+                                        <option value="Proyecto">Proyecto</option>
+                                        <option value="Seguridad">Seguridad</option>
+                                        <option value="Calidad">Calidad</option>
+                                    </select>
+                                </td>
+                                <td><input type="text" class="form-control" name="requisito3"></td>
+                                <td><input type="text" class="form-control" name="interesado3"></td>
+                                <td><input type="number" class="form-control" name="nivel3"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -84,6 +106,5 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
 
